@@ -9,6 +9,9 @@
  impairs alors le joueur récupère la moitié de sa mise.
  * Dans les autres cas, le joueur perd sa mise.
  
+ Le jeu s'arrête lorsque le joueur n'a plus d'argent 
+ à miser ou qu'il souhaite quitter le jeu.
+ 
  
  ## Requirements
  * Python 3.6 +
