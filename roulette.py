@@ -3,12 +3,12 @@ from math import ceil
 
 
 def verification_argent_disponible(argent):
-    verif_1 = False
-    while not verif_1:
+    verif = False
+    while not verif:
         try:
             argent = int(argent)
             assert argent > 0
-            verif_1 = True
+            verif = True
         except ValueError:
             argent = input("Veuillez entrer un nombre entier.")
         except AssertionError:
@@ -17,12 +17,12 @@ def verification_argent_disponible(argent):
 
 
 def verification_numero(num):
-    verif_2 = False
-    while not verif_2:
+    verif = False
+    while not verif:
         try:
             num = int(num)
             assert 0 <= num <= 36
-            verif_2 = True
+            verif = True
         except ValueError:
             num = input("Veuillez entrer un nombre entier.")
         except AssertionError:
@@ -31,12 +31,12 @@ def verification_numero(num):
 
 
 def verification_mise(mise, argent):
-    verif_3 = False
-    while not verif_3:
+    verif = False
+    while not verif:
         try:
             mise = int(mise)
             assert 0 < mise <= argent
-            verif_3 = True
+            verif = True
         except ValueError:
             mise = input("Veuillez entrer un nombre entier.")
         except AssertionError:
